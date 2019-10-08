@@ -21,7 +21,8 @@
         <curator-framework.version>4.0.1</curator-framework.version>
         <zookeeper.version>3.4.13</zookeeper.version>
         <dubbo.starter.version>0.2.0</dubbo.starter.version>
-        <swagger-dubbo.version>2.0.1</swagger-dubbo.version>
+        <java.xml.version>2.2.11</java.xml.version>
+        <swagger.dubbo.version>2.0.1</swagger.dubbo.version>
     </properties>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -44,14 +45,10 @@
     </repositories>
     <dependencyManagement>
         <dependencies>
-<!--            <dependency>-->
-<!--                <groupId>org.springframework.boot</groupId>-->
-<!--                <artifactId>spring-boot-starter-web</artifactId>-->
-<!--            </dependency>-->
             <dependency>
                 <groupId>com.alibaba.boot</groupId>
                 <artifactId>dubbo-spring-boot-starter</artifactId>
-                <version>${dubbo.starter.version}}</version>
+                <version>${dubbo.starter.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.curator</groupId>
@@ -63,22 +60,12 @@
                 <artifactId>zookeeper</artifactId>
                 <version>${zookeeper.version}</version>
             </dependency>
-<!--            <dependency>-->
-<!--                <groupId>org.springframework.boot</groupId>-->
-<!--                <artifactId>spring-boot-starter-test</artifactId>-->
-<!--                <scope>test</scope>-->
-<!--            </dependency>-->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>1.18.8</version>
             </dependency>
 
-            <dependency>
-                <groupId>com.deepoove</groupId>
-                <artifactId>swagger-dubbo</artifactId>
-                <version>${swagger-dubbo.version}</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 <!--    <build>-->

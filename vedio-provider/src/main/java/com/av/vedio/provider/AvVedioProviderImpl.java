@@ -12,4 +12,9 @@ public class AvVedioProviderImpl implements AvVedioProvider {
     public List<TbItem> findAllTbItem() {
         return TbItemDao.getList();
     }
+
+    @Override
+    public String getName(String account) {
+        return "stonenotes";
+    }
 }

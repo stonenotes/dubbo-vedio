@@ -3,15 +3,13 @@ package com.av.vedio.config;
 import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.ProtocolConfig;
 import com.alibaba.dubbo.config.RegistryConfig;
-import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
 import com.deepoove.swagger.dubbo.annotations.EnableDubboSwagger;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@DubboComponentScan(basePackages = { "com.av.vedio" })
 @EnableDubboSwagger
-public class DubboConfig {
+public class DubboConfig extends BaseSwaggerConfig {
 
     @Bean
     public ApplicationConfig applicationConfig(){
@@ -24,7 +22,8 @@ public class DubboConfig {
     public RegistryConfig registryConfig(){
         RegistryConfig registryConfig = new RegistryConfig();
         registryConfig.setProtocol("zookeeper");
-        registryConfig.setAddress("192.168.33.11:2181,192.168.33.12:2181,192.168.33.13:2181");
+//        registryConfig.setAddress("192.168.33.11:2181,192.168.33.12:2181,192.168.33.13:2181");
+        registryConfig.setAddress("127.0.0.1:2181");
         return registryConfig;
     }
 
