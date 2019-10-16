@@ -7,6 +7,7 @@
         <module>vedio-common</module>
         <module>vedio-provider</module>
         <module>vedio-consumer</module>
+        <module>code-generator</module>
     </modules>
 
     <groupId>com.av.vedio</groupId>
@@ -23,6 +24,8 @@
         <dubbo.starter.version>0.2.0</dubbo.starter.version>
         <java.xml.version>2.2.11</java.xml.version>
         <swagger.dubbo.version>2.0.1</swagger.dubbo.version>
+        <mybatis.plus.vesion>3.2.0</mybatis.plus.vesion>
+        <fastjson.vesion>1.2.62</fastjson.vesion>
     </properties>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -64,6 +67,18 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>1.18.8</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus</artifactId>
+                <version>${mybatis.plus.vesion}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.vesion}</version>
             </dependency>
 
         </dependencies>

@@ -2,7 +2,7 @@ package com.av.vedio.provider;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.av.vedio.dao.TbItemDao;
-import com.av.vedio.model.TbItem;
+import com.av.vedio.entity.TbItem;
 
 import java.util.List;
 

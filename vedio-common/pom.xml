@@ -47,5 +47,10 @@
             <artifactId>jaxb-impl</artifactId>
             <version>${java.xml.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus</artifactId>
+            <version>3.2.0</version>
+        </dependency>
     </dependencies>
 </project>

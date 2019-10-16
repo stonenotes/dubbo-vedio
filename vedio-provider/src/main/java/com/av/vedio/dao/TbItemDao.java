@@ -1,7 +1,8 @@
 package com.av.vedio.dao;
 
-import com.av.vedio.model.TbItem;
+import com.av.vedio.entity.TbItem;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +12,7 @@ public class TbItemDao {
     static {
         list = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            list.add(new TbItem(i + 1l, "item: " + i, 100d));
+//            list.add(new TbItem(i + 1l, "item: " + i, BigDecimal.valueOf(123.11)));
         }
     }
 

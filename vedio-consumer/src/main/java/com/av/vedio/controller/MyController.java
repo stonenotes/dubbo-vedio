@@ -1,7 +1,7 @@
 package com.av.vedio.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.av.vedio.model.TbItem;
+import com.av.vedio.entity.TbItem;
 import com.av.vedio.provider.AvVedioProvider;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -23,5 +23,16 @@ public class MyController {
     @ResponseBody
     public List<TbItem> findAllTbItem(){
         return avVedioProvider.findAllTbItem();
+    }
+
+    @RequestMapping("/")
+    public String loginPage() {
+        return "/login";
+    }
+
+    @RequestMapping("/login")
+    public String toLogin(String username, String password) {
+        System.out.println(username + "-------" + password);
+        return "";
     }
 }

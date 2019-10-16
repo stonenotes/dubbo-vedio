@@ -1,6 +1,6 @@
 package com.av.vedio.provider;
 
-import com.av.vedio.model.TbItem;
+import com.av.vedio.entity.TbItem;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
