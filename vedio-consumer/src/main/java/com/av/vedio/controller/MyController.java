@@ -33,6 +33,6 @@ public class MyController {
     @RequestMapping("/login")
     public String toLogin(String username, String password) {
         System.out.println(username + "-------" + password);
-        return "";
+        return "login";
     }
 }
