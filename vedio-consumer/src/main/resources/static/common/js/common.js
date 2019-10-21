@@ -9,6 +9,12 @@ layui.use(['layer', 'form', 'element'], function () {
     $(".layui-nav-item").click(function () {
         var url = $(this).attr("url");
         console.log("-----url---" + url);
+       loadContainer(url);
+    });
+
+    loadContainer("/login");
+
+    function loadContainer(url) {
         $.ajax({
             url: url,
             success: function(data){
@@ -18,5 +24,6 @@ layui.use(['layer', 'form', 'element'], function () {
                 alert("error");
             }
         });
-    });
+    }
 });
+
