@@ -27,7 +27,7 @@ public class MyController {
 
     @RequestMapping("/")
     public String loginPage() {
-        return "/login";
+        return "/home_page";
     }
 
     @RequestMapping("/login")
