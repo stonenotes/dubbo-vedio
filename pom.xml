@@ -25,7 +25,7 @@
         <java.xml.version>2.2.11</java.xml.version>
         <swagger.dubbo.version>2.0.1</swagger.dubbo.version>
         <mybatis.plus.vesion>3.2.0</mybatis.plus.vesion>
-        <fastjson.vesion>1.2.62</fastjson.vesion>
+        <fastjson.vesion>1.2.83</fastjson.vesion>
     </properties>
     <parent>
         <groupId>org.springframework.boot</groupId>
